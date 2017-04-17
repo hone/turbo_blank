@@ -1,0 +1,5 @@
+require_relative 'build_task'
+
+HelixRuntime::BuildTask.new("turbo_blank") 
+
+task :default => :build
