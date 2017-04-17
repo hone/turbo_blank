@@ -16,15 +16,12 @@ class String
   end
 
   case ENV["IMPLEMENTATION"]
-  when "RUST"
-    alias blank? is_blank
   when "RAILS_4_2"
     alias blank? rails_4_2_blank?
   when "RAILS_5"
     alias blank? rails_5_blank?
   when "NONE"
   else
-    puts "\nPlease specify an IMPLEMENTATION: RUST, RAILS_4_2, RAILS_5 or NONE"
-    exit!
+    alias blank? is_blank
   end
 end
