@@ -1,5 +1,7 @@
 require_relative 'build_task'
 
-HelixRuntime::BuildTask.new("turbo_blank") 
+HelixRuntime::BuildTask.new("turbo_blank") do |task|
+  task.lib_path = "../lib/turbo_blank"
+end
 
 task :default => :build
