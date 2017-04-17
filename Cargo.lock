@@ -1,0 +1,47 @@
+[root]
+name = "turbo_blank"
+version = "0.1.0"
+dependencies = [
+ "helix 0.1.0 (git+https://github.com/tildeio/helix.git)",
+]
+
+[[package]]
+name = "cslice"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "cstr-macro"
+version = "0.1.0"
+source = "git+https://github.com/tildeio/helix.git#4d5342326026439459e976d7c6c3df9ffa7ba1de"
+
+[[package]]
+name = "helix"
+version = "0.1.0"
+source = "git+https://github.com/tildeio/helix.git#4d5342326026439459e976d7c6c3df9ffa7ba1de"
+dependencies = [
+ "cslice 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cstr-macro 0.1.0 (git+https://github.com/tildeio/helix.git)",
+ "libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libcruby-sys 0.5.0 (git+https://github.com/tildeio/helix.git)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libcruby-sys"
+version = "0.5.0"
+source = "git+https://github.com/tildeio/helix.git#4d5342326026439459e976d7c6c3df9ffa7ba1de"
+dependencies = [
+ "libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum cslice 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "697c714f50560202b1f4e2e09cd50a421881c83e9025db75d15f276616f04f40"
+"checksum cstr-macro 0.1.0 (git+https://github.com/tildeio/helix.git)" = "<none>"
+"checksum helix 0.1.0 (git+https://github.com/tildeio/helix.git)" = "<none>"
+"checksum libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)" = "88ee81885f9f04bff991e306fea7c1c60a5f0f9e409e99f6b40e3311a3363135"
+"checksum libcruby-sys 0.5.0 (git+https://github.com/tildeio/helix.git)" = "<none>"

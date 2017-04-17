@@ -1,0 +1,32 @@
+GIT
+  remote: git://github.com/tildeio/helix.git
+  revision: 4d5342326026439459e976d7c6c3df9ffa7ba1de
+  specs:
+    helix_runtime (0.5.0)
+      rake (~> 10.0)
+
+PATH
+  remote: .
+  specs:
+    turbo_blank (0.1.0)
+      helix_runtime
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.8.3)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  bundler (~> 1.11)
+  helix_runtime!
+  minitest (~> 5.0)
+  rake (~> 10.0)
+  turbo_blank!
+
+BUNDLED WITH
+   1.14.6
